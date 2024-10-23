@@ -11,7 +11,7 @@ Inside a Jupyter Notebook, you can run a model with these two lines of code - th
 !calligraph results_economic_dispatch.nc
 ```
 
-## Exercise questions
+<!-- ## Exercise questions
 
 ### Exercise 1. City-scale dispatch problem
 
@@ -38,4 +38,4 @@ Assume we are modelling three countries: Germany, Switzerland and Italy. Each co
 
 **Step 3.** Remove the limit of maximum storage (in this case, battery) capacity and rerun the model. Observe the capacity and dispatch plots again.
 1. What has changed in terms of technology capacities? Why do you think the model makes this choice?
-2. Could you give an overview of the effects of transmission and storage technologies in the whole energy system (especially with a high renewables share)?
+2. Could you give an overview of the effects of transmission and storage technologies in the whole energy system (especially with a high renewables share)? -->

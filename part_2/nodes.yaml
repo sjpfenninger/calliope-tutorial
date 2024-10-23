@@ -9,10 +9,8 @@ nodes:
         flow_cap_max: 3
         flow_cap_min: 3
       wind:
-        # flow_cap_max: 0
         flow_cap_min: 0 # IRENASTAT, 2023 value
       pv:
-        # flow_cap_max: 6
         flow_cap_min: 6 # IRENASTAT, 2023 value
       demand_electricity:
       battery:

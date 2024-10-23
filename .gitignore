@@ -1,5 +1,2 @@
-.history/
-
-reform_csv.ipynb
-results/
-plots/
+*.ipynb
+*.nc

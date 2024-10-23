@@ -94,11 +94,11 @@ techs:
     to: DEU
     template: power_transmission
     color: "#6783E3"
-    # flow_cap_max: 0
+    flow_cap_max: 0
 
   CHE_to_ITA:
     from: CHE
     to: ITA
     template: power_transmission
     color: "#678354"
-    # flow_cap_max: 0
+    flow_cap_max: 0

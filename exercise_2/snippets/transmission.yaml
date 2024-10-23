@@ -1,0 +1,27 @@
+templates:
+
+  power_transmission:
+    template: basic_costs_template
+    base_tech: transmission
+    carrier_in: electricity
+    carrier_out: electricity
+    lifetime: 60  # Years
+    name: "Electrical power distribution"
+    flow_out_eff: 0.99999995
+    cost_om_annual.data: 0.015
+    cost_flow_cap.data: 9e-03  #  million EUR/GW | Very small dummy cost
+    cost_flow_out.data: 1e-5  # million EUR/(GW*m) assumption to avoid loop flows
+
+techs:
+
+  CHE_to_DEU:
+    from: CHE
+    to: DEU
+    template: power_transmission
+    color: "#6783E3"
+
+  CHE_to_ITA:
+    from: CHE
+    to: ITA
+    template: power_transmission
+    color: "#678354"

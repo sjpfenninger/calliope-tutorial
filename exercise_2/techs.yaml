@@ -25,18 +25,7 @@ templates:
     base_tech: supply
     carrier_out: electricity
     lifetime: 25  # Years
-  power_transmission:
-    template: basic_costs_template
-    base_tech: transmission
-    carrier_in: electricity
-    carrier_out: electricity
-    lifetime: 60  # Years
-    name: "Electrical power distribution"
-    color: "#6783E3"
-    flow_out_eff: 0.99999995
-    cost_om_annual.data: 0.015
-    cost_flow_cap.data: 9e-03  #  million EUR/GW | Very small dummy cost
-    cost_flow_out.data: 1e-5  # million EUR/(GW*m) assumption to avoid loop flows
+
 
 techs:
   ##
@@ -61,7 +50,7 @@ techs:
   # Non-renewable technologies
   ##
 
-  gas:
+  gas_pp:
     name: "Gas power plant"
     template: power_plant
     color: "#FFA07A"
@@ -85,21 +74,3 @@ techs:
     color: "#072486"
     base_tech: demand
     carrier_in: electricity
-
-  ##
-  # Transmission links
-  ##
-
-  CHE_to_DEU:
-    from: CHE
-    to: DEU
-    template: power_transmission
-    flow_cap_max: 0
-    flow_cap_min: 0
-
-  CHE_to_ITA:
-    from: CHE
-    to: ITA
-    template: power_transmission
-    flow_cap_max: 0
-    flow_cap_min: 0

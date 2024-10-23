@@ -3,18 +3,15 @@ nodes:
     latitude: 46.8182
     longitude: 8.2275
     techs:
-      gas:
-        flow_cap_max: 5  # Dummy value
-        flow_cap_min: 5
+      gas_pp:
+        flow_cap_max: 1 # Dummy value, there's not much gas in CHE at the moment
       nuclear:
         flow_cap_max: 3
         flow_cap_min: 3
       wind:
-        flow_cap_max: 0
-        flow_cap_min: 0
+        flow_cap_min: 0 # IRENASTAT, 2023 value
       pv:
-        flow_cap_max: 6
-        flow_cap_min: 6
+        flow_cap_min: 6 # IRENASTAT, 2023 value
       demand_electricity:
   DEU:
     latitude: 51.1657
@@ -23,15 +20,12 @@ nodes:
       nuclear:
         flow_cap_max: 0
         flow_cap_min: 0
-      gas:
-        flow_cap_max: 100
-        flow_cap_min: 100
+      gas_pp:
+        flow_cap_max: 36 # ENTSO-E transparency platform, 2023 value
       wind:
-        flow_cap_max: 60
-        flow_cap_min: 60
+        flow_cap_min: 61 # IRENASTAT, 2023 value
       pv:
-        flow_cap_max: 82
-        flow_cap_min: 82
+        flow_cap_min: 82 # IRENASTAT, 2023 value
       demand_electricity:
   ITA:
     latitude: 41.8719
@@ -40,13 +34,10 @@ nodes:
       nuclear:
         flow_cap_max: 0
         flow_cap_min: 0
-      gas:
-        flow_cap_max: 60
-        flow_cap_min: 60
+      gas_pp:
+        flow_cap_max: 45 # IRENASTAT, 2023 value
       wind:
-        flow_cap_max: 12
-        flow_cap_min: 12
+        flow_cap_min: 12 # IRENASTAT, 2023 value
       pv:
-        flow_cap_max: 30
-        flow_cap_min: 30
+        flow_cap_min: 30 # IRENASTAT, 2023 value
       demand_electricity:

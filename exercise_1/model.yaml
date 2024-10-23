@@ -21,11 +21,11 @@ nodes:
         flow_cap_max: 2  # GW
         flow_cap_min: 2  # GW
       wind:
-        flow_cap_max: 0  # GW
-        flow_cap_min: 0  # GW
+        flow_cap_max: 3  # GW
+        flow_cap_min: 3  # GW
       pv:
-        flow_cap_max: 0  # GW
-        flow_cap_min: 0  # GW
+        flow_cap_max: 3  # GW
+        flow_cap_min: 3  # GW
       demand_electricity:
 
 data_sources:

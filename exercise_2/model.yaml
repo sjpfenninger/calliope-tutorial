@@ -1,12 +1,10 @@
 import:
   - "techs.yaml"
   - "nodes.yaml"
-  - "links.yaml"
 
 config:
   init:
-    name: model_2
-    calliope_version: 0.7.0
+    name: Three-country model
     time_subset: ["2018-01-01", "2018-01-31"]
 
   build:

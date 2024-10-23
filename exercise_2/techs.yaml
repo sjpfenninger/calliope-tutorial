@@ -1,0 +1,105 @@
+templates:
+  basic_costs_template:
+    cost_interest_rate:
+      data: 0.073  # average wind onshore WACC OECD from [@Steffen:2019]
+      index: monetary
+      dims: costs
+    cost_om_annual:
+      data: null
+      index: monetary
+      dims: costs
+    cost_flow_cap:
+      data: null
+      index: monetary
+      dims: costs
+    cost_flow_out:
+      data: null
+      index: monetary
+      dims: costs
+    cost_flow_in:
+      data: null
+      index: monetary
+      dims: costs
+  power_plant:
+    template: basic_costs_template
+    base_tech: supply
+    carrier_out: electricity
+    lifetime: 25  # Years
+  power_transmission:
+    template: basic_costs_template
+    base_tech: transmission
+    carrier_in: electricity
+    carrier_out: electricity
+    lifetime: 60  # Years
+    name: "Electrical power distribution"
+    color: "#6783E3"
+    flow_out_eff: 0.99999995
+    cost_om_annual.data: 0.015
+    cost_flow_cap.data: 9e-03  #  million EUR/GW | Very small dummy cost
+    cost_flow_out.data: 1e-5  # million EUR/(GW*m) assumption to avoid loop flows
+
+techs:
+  ##
+  # Renewable technologies
+  ##
+
+  pv:
+    name: "Solar PV power power plant"
+    template: power_plant
+    color: "#F9D956"
+    source_unit: per_cap
+    cost_flow_cap.data: 240  # million EUR/GW | Danish energy agency (technology data for el/dh, 22 photovoltaics large, 2050)
+
+  wind:
+    name: "Wind power plant"
+    template: power_plant
+    color: "#56CBF9"
+    source_unit: per_cap
+    cost_flow_cap.data: 960  # million EUR/GW | Danish energy agency (technology data for el/dh, 20 onshore turbines, 2050)
+
+  ##
+  # Non-renewable technologies
+  ##
+
+  gas:
+    name: "Gas power plant"
+    template: power_plant
+    color: "#FFA07A"
+    cost_flow_cap.data: 846  # million EUR/GW Danish Energy Agency, technology_data_for_el_and_dh.xlsx
+    cost_flow_in.data: 0.00434  # million EUR/GWh
+
+  nuclear:
+    name: "Nuclear power plant"
+    template: power_plant
+    color: "#F3007A"
+    flow_out_min_relative: 0.5
+    cost_flow_cap.data: 3672  # million EUR/GW Danish Energy Agency, technology_data_for_el_and_dh.xlsx
+    cost_flow_in.data: 0.00175  # million EUR/GWh
+
+  ##
+  # Electricity demand
+  ##
+
+  demand_electricity:
+    name: "Electricity demand"
+    color: "#072486"
+    base_tech: demand
+    carrier_in: electricity
+
+  ##
+  # Transmission links
+  ##
+
+  CHE_to_DEU:
+    from: CHE
+    to: DEU
+    template: power_transmission
+    flow_cap_max: 0
+    flow_cap_min: 0
+
+  CHE_to_ITA:
+    from: CHE
+    to: ITA
+    template: power_transmission
+    flow_cap_max: 0
+    flow_cap_min: 0

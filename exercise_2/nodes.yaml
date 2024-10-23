@@ -3,10 +3,10 @@ nodes:
     latitude: 46.8182
     longitude: 8.2275
     techs:
-      gas_pp:
+      gas:
         flow_cap_max: 5  # Dummy value
         flow_cap_min: 5
-      nuclear_pp:
+      nuclear:
         flow_cap_max: 3
         flow_cap_min: 3
       wind:
@@ -20,10 +20,10 @@ nodes:
     latitude: 51.1657
     longitude: 10.4515
     techs:
-      nuclear_pp:
+      nuclear:
         flow_cap_max: 0
         flow_cap_min: 0
-      gas_pp:
+      gas:
         flow_cap_max: 100
         flow_cap_min: 100
       wind:
@@ -37,10 +37,10 @@ nodes:
     latitude: 41.8719
     longitude: 12.5674
     techs:
-      nuclear_pp:
+      nuclear:
         flow_cap_max: 0
         flow_cap_min: 0
-      gas_pp:
+      gas:
         flow_cap_max: 60
         flow_cap_min: 60
       wind:

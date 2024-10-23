@@ -29,10 +29,13 @@ Assume we are modelling for city A that has gas power plants and a nuclear power
 
 Assume we are modelling three countries: Germany, Switzerland and Italy. Each country has certain amount of available land for renewables with different capacity factors.
 
-**Step 1.** Run model 2 as it sits now and plot the nodal shadow prices.
-1. Are they different? Why / why not?
+**Step 1.** Run model 2 as it sits now. In this setting, no transmission capacity between countries is allowed, and it is also not possible to have any storage technology. Observe the capacity of different technologies as well as the dispatch plots in each country.
+1. What do you think of the efficiency of resource utilisation? Why?
 
-**Step 2.** Change one parameter in the model or add one technology at one specific node to make the nodal shadow prices equivalent to each other.
-1. What did you do? Why would that work?
-2. Can you think of at least 3 ways to make it happen?
-3. Which one of them are the best in a real-world case, in your opinion, and why?
+**Step 2.** Remove the limit of maximum transmission capacity for each transmission link and rerun the model. Observe the capacity and dispatch plots again.
+1. What has changed in terms of technology capacities? Why do you think the model makes this choice?
+2. What exactly happens as shown in the dispatch plot (where is importing, where is exporting, and when is that happening)?
+
+**Step 3.** Remove the limit of maximum storage (in this case, battery) capacity and rerun the model. Observe the capacity and dispatch plots again.
+1. What has changed in terms of technology capacities? Why do you think the model makes this choice?
+2. Could you give an overview of the effects of transmission and storage technologies in the whole energy system (especially with a high renewables share)?

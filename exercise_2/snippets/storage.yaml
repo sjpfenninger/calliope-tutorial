@@ -1,28 +1,18 @@
-templates:
-  storage_tech:
+techs:
+
+  battery:
+    name: "Battery storage"
+    color: "#f179e7"
     template: basic_costs_template
     base_tech: storage
     carrier_in: electricity
     carrier_out: electricity
     lifetime: 25
-
-
-techs:
-
-##
-# Storage technologies
-##
-
-  battery:
-    name: "Battery storage"
-    color: "#f179e7"
-    base_tech: storage
-    template: storage_tech
     flow_cap_per_storage_cap_max: 4
     # 0.95 * 0.95 = 0.9025 round trip efficiency
     flow_out_eff: 0.95
     flow_in_eff: 0.95
-    storage_loss: 0 # No loss over time assumed
+    storage_loss: 0  # No loss of stored energy over time assumed
     cost_storage_cap:
       data: 200  # million EUR per GWh storage capacity
       index: monetary

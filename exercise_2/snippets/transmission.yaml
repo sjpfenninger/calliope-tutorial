@@ -1,5 +1,5 @@
-
 templates:
+
   power_transmission:
     template: basic_costs_template
     base_tech: transmission
@@ -12,15 +12,7 @@ templates:
     cost_flow_cap.data: 9e-03  #  million EUR/GW | Very small dummy cost
     cost_flow_out.data: 1e-5  # million EUR/(GW*m) assumption to avoid loop flows
 
-
-
-
-
 techs:
-
-##
-# Transmission links
-##
 
   CHE_to_DEU:
     from: CHE

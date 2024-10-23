@@ -32,7 +32,6 @@ templates:
     carrier_out: electricity
     lifetime: 60  # Years
     name: "Electrical power distribution"
-    color: "#6783E3"
     flow_out_eff: 0.99999995
     cost_om_annual.data: 0.015
     cost_flow_cap.data: 9e-03  #  million EUR/GW | Very small dummy cost
@@ -61,7 +60,7 @@ techs:
   # Non-renewable technologies
   ##
 
-  gas:
+  gas_pp:
     name: "Gas power plant"
     template: power_plant
     color: "#FFA07A"
@@ -94,12 +93,12 @@ techs:
     from: CHE
     to: DEU
     template: power_transmission
-    flow_cap_max: 0
-    flow_cap_min: 0
+    color: "#6783E3"
+    # flow_cap_max: 0
 
   CHE_to_ITA:
     from: CHE
     to: ITA
     template: power_transmission
-    flow_cap_max: 0
-    flow_cap_min: 0
+    color: "#678354"
+    # flow_cap_max: 0

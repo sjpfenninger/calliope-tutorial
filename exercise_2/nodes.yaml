@@ -5,7 +5,7 @@ nodes:
     techs:
       gas_pp:
         flow_cap_max: 1 # Dummy value, there's not much gas in CHE at the moment
-      nuclear_pp:
+      nuclear:
         flow_cap_max: 3
         flow_cap_min: 3
       wind:
@@ -13,8 +13,6 @@ nodes:
       pv:
         flow_cap_min: 6 # IRENASTAT, 2023 value
       demand_electricity:
-      battery:
-        flow_cap_max: 0
   DEU:
     latitude: 51.1657
     longitude: 10.4515
@@ -29,8 +27,6 @@ nodes:
       pv:
         flow_cap_min: 82 # IRENASTAT, 2023 value
       demand_electricity:
-      battery:
-        flow_cap_max: 0
   ITA:
     latitude: 41.8719
     longitude: 12.5674
@@ -45,5 +41,3 @@ nodes:
       pv:
         flow_cap_min: 30 # IRENASTAT, 2023 value
       demand_electricity:
-      battery:
-        flow_cap_max: 0
